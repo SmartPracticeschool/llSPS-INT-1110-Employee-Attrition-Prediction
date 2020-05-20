@@ -18,7 +18,7 @@ lb=LabelEncoder()
 y=lb.fit_transform(y) 
 
 from sklearn.model_selection import train_test_split
-x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2,random_state=1)
+x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.3,random_state=1)
 
 from sklearn.ensemble import RandomForestClassifier
 rf = RandomForestClassifier(n_estimators=15,criterion="entropy")
