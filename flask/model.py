@@ -21,7 +21,7 @@ from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2,random_state=1)
 
 from sklearn.ensemble import RandomForestClassifier
-rf = RandomForestClassifier(n_estimators=45,criterion="entropy")
+rf = RandomForestClassifier(n_estimators=15,criterion="entropy")
 rf.fit(x_train,y_train)
 
 pickle.dump(rf, open('model.pkl','wb'))
